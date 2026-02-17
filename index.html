@@ -6,50 +6,8 @@
     <title>Ann's Resume Website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;800&display=swap" rel="stylesheet">
-    <style>
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 15px;
-            background: #000;
-            margin-bottom: 15px; /* Adds space for the text below */
-        }
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .snippet-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            padding: 20px 0;
-        }
-        .snippet-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            height: auto;
-            padding: 20px;
-        }
-        .snippet-card h3 {
-            margin: 10px 0 5px 0;
-            font-size: 1.2rem;
-            color: #fff;
-        }
-        .snippet-desc {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.4;
-        }
-    </style>
 </head>
-<body id="body">
+<body>
     <div class="silver-glitter"></div>
 
     <nav class="navbar">
@@ -87,47 +45,34 @@
         <section id="objections" class="scrolling-section">
             <h2 class="section-title">Call Snippets</h2>
             <div class="snippet-grid">
-                
-                <div class="snippet-container">
-                    <div class="snippet-card glow-box">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/wgHLtExMLAA" allowfullscreen></iframe>
-                        </div>
-                        <h3>I Can Do It Myself</h3>
-                        <p class="snippet-desc">Handling the self-reliance objection by validating their strength while highlighting the value of a dedicated partner.</p>
+                <div class="snippet-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/wgHLtExMLAA" allowfullscreen></iframe>
                     </div>
+                    <h3>I Can Do It Myself</h3>
+                    <p class="snippet-desc">Handling the self-reliance objection by validating their strength while highlighting the value of a dedicated partner.</p>
                 </div>
-
-                <div class="snippet-container">
-                    <div class="snippet-card glow-box">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/hgAX8U9VjMo" allowfullscreen></iframe>
-                        </div>
-                        <h3>Think About It</h3>
-                        <p class="snippet-desc">Gaining clarity on the "mulling over" points to ensure they have all the info needed to make a heart-aligned decision.</p>
+                <div class="snippet-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/hgAX8U9VjMo" allowfullscreen></iframe>
                     </div>
+                    <h3>Think About It</h3>
+                    <p class="snippet-desc">Gaining clarity on the "mulling over" points to ensure they have all the info needed to make a heart-aligned decision.</p>
                 </div>
-
-                <div class="snippet-container">
-                    <div class="snippet-card glow-box">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/CMmKwDHbcAU" allowfullscreen></iframe>
-                        </div>
-                        <h3>Bad Experience</h3>
-                        <p class="snippet-desc">Reframing mindset from previous program failures and focusing on why this time is different.</p>
+                <div class="snippet-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/CMmKwDHbcAU" allowfullscreen></iframe>
                     </div>
+                    <h3>Bad Experience</h3>
+                    <p class="snippet-desc">Reframing mindset from previous program failures and focusing on why this time is different.</p>
                 </div>
-
-                <div class="snippet-container">
-                    <div class="snippet-card glow-box">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/Kq4wspNMKWU" allowfullscreen></iframe>
-                        </div>
-                        <h3>Discovery Call</h3>
-                        <p class="snippet-desc">Deep diving into the gap between where they are and their desired outcomes to establish a clear bridge.</p>
+                <div class="snippet-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/Kq4wspNMKWU" allowfullscreen></iframe>
                     </div>
+                    <h3>Discovery Call</h3>
+                    <p class="snippet-desc">Deep diving into the gap between where they are and their desired outcomes to establish a clear bridge.</p>
                 </div>
-
             </div>
         </section>
 
@@ -135,7 +80,7 @@
             <h2 class="section-title">Experience & Qualifications</h2>
             <div class="exp-flex">
                 <div class="photo-card glow-box">
-                    <img src="image/4.jpg" alt="Ann Profile Photo" style="width:100%; border-radius:20px;">
+                    <img src="image/4.jpg" alt="Ann Profile Photo">
                 </div>
                 <div class="text-card glow-box">
                     <ul class="exp-list">
