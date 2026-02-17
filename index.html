@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ann's Resume Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;800&display=swap" rel="stylesheet">
+    <style>
+        /* Speed Optimization: Custom Video Containers */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .video-container:hover {
+            transform: scale(1.02);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            border: none;
+        }
+        .load-trigger {
+            color: #fff;
+            text-align: center;
+            z-index: 2;
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            background: var(--pink-bright);
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(255, 20, 147, 0.4);
+        }
+        .video-card.main-loom {
+            min-height: 450px;
+            background: #000;
+        }
+        .video-preview-mini {
+            height: 220px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="silver-glitter"></div>
+
+    <nav class="navbar">
+        <div class="nav-links">
+            <div class="nav-box"><a href="#loom" class="nav-btn">Loom Video</a></div>
+            <div class="nav-box"><a href="#experience" class="nav-btn">Experience</a></div>
+            <div class="nav-box"><a href="#objections" class="nav-btn">Call Snippets</a></div>
+            <div class="nav-box resume-box">
+                <a href="image/resumee.png" download="Ann_Resume" target="_blank" class="nav-btn">Resume ↓</a>
+            </div>
+            <div class="nav-box contact-nav-box"><a href="#contact" class="nav-btn">Contact</a></div>
+        </div>
+    </nav>
+
+    <div class="nav-spacer"></div>
+
+    <main class="container">
+        
+        <section id="loom" class="hero-section">
+            <div class="hero-flex">
+                <div class="intro-card glow-box">
+                    <h1>Hi, I'm Ann!</h1>
+                    <p class="big-text">If you’re reading this,</p>
+                    <ul class="hero-highlights">
+                        <li>You’re a heart-led founder transforming lives</li>
+                        <li>You have built something meaningful and sacred</li>
+                        <li>You're ready to scale with a closer who protects your brand</li>
+                    </ul>
+                </div>
+
+                <div class="video-card glow-box main-loom">
+                    <div class="video-container" onclick="this.innerHTML='<iframe src=\'https://drive.google.com/file/d/1ubXQo9X_jrroq521fcx_sLjP4eQh3z52/preview?autoplay=1\' allow=\'autoplay\'></iframe>'">
+                        <div class="load-trigger"><h1>▶ Click to Play Intro Video Here</h1></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="objections" class="scrolling-section">
+            <h2 class="section-title">Objection Handling Snippets</h2>
+            <div class="snippet-grid">
+                
+                <div class="snippet-container">
+                    <div class="snippet-card glow-box snippet-pastel">
+                        <div class="video-preview-mini">
+                            <div class="video-container" onclick="this.innerHTML='<iframe src=\'https://drive.google.com/file/d/1zPt1JFsjV76QBwAvh8O-aSleCW3cfhPp/preview?autoplay=1\' allow=\'autoplay\'></iframe>'">
+                                <div class="load-trigger" style="font-size:0.8rem;">▶ Watch Snippet</div>
+                            </div>
+                        </div>
+                        <h3>"I Can Do It Myself"</h3>
+                        <p class="snippet-desc">Highlighting the value of proven systems vs. trial and error.</p>
+                    </div>
+                </div>
+
+                <div class="snippet-container">
+                    <div class="snippet-card glow-box snippet-pastel">
+                        <div class="video-preview-mini">
+                            <div class="video-container" onclick="this.innerHTML='<iframe src=\'https://drive.google.com/file/d/1ijalnJZCxi-jx8qWf4BO3g3FJF2QSOSc/preview?autoplay=1\' allow=\'autoplay\'></iframe>'">
+                                <div class="load-trigger" style="font-size:0.8rem;">▶ Watch Snippet</div>
+                            </div>
+                        </div>
+                        <h3>"It's Too Expensive"</h3>
+                        <p class="snippet-desc">Reframing price vs. the long-term cost of staying the same.</p>
+                    </div>
+                </div>
+
+                <div class="snippet-container">
+                    <div class="snippet-card glow-box snippet-pastel">
+                        <div class="video-preview-mini">
+                            <div class="video-container" onclick="this.innerHTML='<iframe src=\'https://drive.google.com/file/d/1i650IMksAy2uAO22bzUo9d5s4FTTRpZB/preview?autoplay=1\' allow=\'autoplay\'></iframe>'">
+                                <div class="load-trigger" style="font-size:0.8rem;">▶ Watch Snippet</div>
+                            </div>
+                        </div>
+                        <h3>Bad Past Experience</h3>
+                        <p class="snippet-desc">Addressing trauma from previous programs with empathy.</p>
+                    </div>
+                </div>
+
+                <div class="snippet-container">
+                    <div class="snippet-card glow-box snippet-pastel">
+                        <div class="video-preview-mini">
+                            <div class="video-container" onclick="this.innerHTML='<iframe src=\'https://drive.google.com/file/d/1RqIYUXzUx_s5ZIv6_JW7eGVlTNExG7Qq/preview?autoplay=1\' allow=\'autoplay\'></iframe>'">
+                                <div class="load-trigger" style="font-size:0.8rem;">▶ Watch Snippet</div>
+                            </div>
+                        </div>
+                        <h3>Discovery Call</h3>
+                        <p class="snippet-desc">Gap analysis and uncovering deep goals/desires.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experience" class="scrolling-section">
+            <h2 class="section-title">Experience & Qualifications</h2>
+            <div class="exp-flex">
+                <div class="photo-card glow-box">
+                    <img src="image/4.jpg" alt="Ann Portfolio" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
+                </div>
+                <div class="text-card glow-box">
+                    <ul class="exp-list">
+                        <li><strong>High Conversion:</strong> 60-70% enrollment rate on intuitive coaching offers.</li>
+                        <li><strong>Expert Training:</strong> She Sells Academy Certified with 100+ roleplay hours.</li>
+                        <li><strong>Scale Specialist:</strong> Built studio revenue to 50k INR monthly via organic outbound.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="scrolling-section">
+            <div class="contact-card glow-box">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-grid-container">
+                    <div class="contact-pod-inner"><a href="https://www.instagram.com/intuitivecoachanushka/" target="_blank">Instagram</a></div>
+                    <div class="contact-pod-inner"><a href="tel:+916364115282">📞 Call Me</a></div>
+                    <div class="contact-pod-inner"><a href="mailto:letschat.ann@gmail.com">📨 Email</a></div>
+                    <div class="contact-pod-inner book-roleplay-pod">
+                        <a href="https://calendly.com/letschat-ann/45min" target="_blank">🗓️ Book Roleplay</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>
