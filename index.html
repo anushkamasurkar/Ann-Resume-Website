@@ -7,44 +7,40 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;800&display=swap" rel="stylesheet">
     <style>
-        .video-container {
+        /* This ensures the video boxes stay the right shape and look premium */
+        .video-wrapper {
             position: relative;
-            width: 100%;
-            height: 100%;
-            background: #000;
-            border-radius: 20px;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
             overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
+            border-radius: 20px;
+            background: #000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-        video {
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            display: block;
-            border-radius: 20px;
+            border: none;
         }
-        .load-trigger {
-            position: absolute;
-            background: #FF1493;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 50px;
-            font-weight: 800;
-            z-index: 5;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        .video-card.main-loom {
+            margin-top: 20px;
         }
     </style>
 </head>
-<body>
+<body id="body">
     <div class="silver-glitter"></div>
+
     <nav class="navbar">
         <div class="nav-links">
             <div class="nav-box"><a href="#loom" class="nav-btn">Loom Video</a></div>
             <div class="nav-box"><a href="#experience" class="nav-btn">Experience</a></div>
             <div class="nav-box"><a href="#objections" class="nav-btn">Snippets</a></div>
-            <div class="nav-box resume-box"><a href="image/resumee.png" download class="nav-btn">Resume ↓</a></div>
+            <div class="nav-box resume-box">
+                <a href="image/resumee.png" download class="nav-btn">Resume ↓</a>
+            </div>
             <div class="nav-box contact-nav-box"><a href="#contact" class="nav-btn">Contact</a></div>
         </div>
     </nav>
@@ -63,9 +59,9 @@
                         <li>You're ready to scale with a closer who protects your brand</li>
                     </ul>
                 </div>
-                <div class="video-card glow-box main-loom" style="height:450px;">
-                    <div class="video-container" onclick="this.innerHTML='<video controls autoplay><source src=\'https://drive.google.com/uc?export=download&id=1ubXQo9X_jrroq521fcx_sLjP4eQh3z52\' type=\'video/mp4\'></video>'">
-                        <div class="load-trigger">▶ Click to Watch Intro</div>
+                <div class="video-card glow-box main-loom">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/M0dt03v685w" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -74,37 +70,62 @@
         <section id="objections" class="scrolling-section">
             <h2 class="section-title">Call Snippets</h2>
             <div class="snippet-grid">
+                
                 <div class="snippet-container">
-                    <div class="snippet-card glow-box">
-                        <div class="video-container" style="height:200px;" onclick="this.innerHTML='<video controls autoplay><source src=\'https://drive.google.com/uc?export=download&id=1zPt1JFsjV76QBwAvh8O-aSleCW3cfhPp\' type=\'video/mp4\'></video>'">
-                            <div class="load-trigger" style="font-size:0.7rem;">▶ Play Snippet</div>
+                    <div class="snippet-card glow-box snippet-pastel">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/wgHLtExMLAA" allowfullscreen></iframe>
                         </div>
                         <h3>I Can Do It Myself</h3>
+                        <p class="snippet-desc">Handling the self-reliance objection with value.</p>
                     </div>
                 </div>
+
                 <div class="snippet-container">
-                    <div class="snippet-card glow-box">
-                        <div class="video-container" style="height:200px;" onclick="this.innerHTML='<video controls autoplay><source src=\'https://drive.google.com/uc?export=download&id=1ijalnJZCxi-jx8qWf4BO3g3FJF2QSOSc\' type=\'video/mp4\'></video>'">
-                            <div class="load-trigger" style="font-size:0.7rem;">▶ Play Snippet</div>
+                    <div class="snippet-card glow-box snippet-pastel">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/hgAX8U9VjMo" allowfullscreen></iframe>
                         </div>
                         <h3>Think About It</h3>
+                        <p class="snippet-desc">Gaining clarity on the "mulling over" points.</p>
                     </div>
                 </div>
+
                 <div class="snippet-container">
-                    <div class="snippet-card glow-box">
-                        <div class="video-container" style="height:200px;" onclick="this.innerHTML='<video controls autoplay><source src=\'https://drive.google.com/uc?export=download&id=1i650IMksAy2uAO22bzUo9d5s4FTTRpZB\' type=\'video/mp4\'></video>'">
-                            <div class="load-trigger" style="font-size:0.7rem;">▶ Play Snippet</div>
+                    <div class="snippet-card glow-box snippet-pastel">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/CMmKwDHbcAU" allowfullscreen></iframe>
                         </div>
                         <h3>Bad Experience</h3>
+                        <p class="snippet-desc">Reframing mindset from previous program failures.</p>
                     </div>
                 </div>
+
                 <div class="snippet-container">
-                    <div class="snippet-card glow-box">
-                        <div class="video-container" style="height:200px;" onclick="this.innerHTML='<video controls autoplay><source src=\'https://drive.google.com/uc?export=download&id=1RqIYUXzUx_s5ZIv6_JW7eGVlTNExG7Qq\' type=\'video/mp4\'></video>'">
-                            <div class="load-trigger" style="font-size:0.7rem;">▶ Play Snippet</div>
+                    <div class="snippet-card glow-box snippet-pastel">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/Kq4wspNMKWU" allowfullscreen></iframe>
                         </div>
                         <h3>Discovery Call</h3>
+                        <p class="snippet-desc">Deep diving into the gap and desired outcomes.</p>
                     </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experience" class="scrolling-section">
+            <h2 class="section-title">Experience & Qualifications</h2>
+            <div class="exp-flex">
+                <div class="photo-card glow-box">
+                    <img src="image/4.jpg" alt="Ann" style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
+                </div>
+                <div class="text-card glow-box">
+                    <ul class="exp-list">
+                        <li><strong>60-70% Conversion:</strong> Proven track record with heart-led offers.</li>
+                        <li><strong>She Sells Academy:</strong> Advanced socratic objection handling.</li>
+                        <li><strong>Inbound/Outbound:</strong> Skilled in both lead gen and closing.</li>
+                    </ul>
                 </div>
             </div>
         </section>
